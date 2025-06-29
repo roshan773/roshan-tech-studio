@@ -46,7 +46,7 @@ roshan-tech-studio/
 | Backend      | Node.js, Express.js                |
 | Database     | MongoDB, Mongoose                  |
 | Deployment   | Vercel (Frontend), Render (Backend)|
-| Tools        | Git, GitHub, VS Code, Figma        |
+| Tools        | Git, GitHub, VS Code, Canva        |
 
 ---
 
