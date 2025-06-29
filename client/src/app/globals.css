@@ -1,0 +1,183 @@
+/* @import "tailwindcss"; */
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000000;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  /* border: 1px solid rgba(255, 255, 255, 0.18); */
+  height: auto;
+}
+
+.marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+  background-color: #000000;
+  position: relative;
+}
+
+.marquee-track {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: scroll-left 40s linear infinite;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: var(--font-oswald);
+}
+
+.marquee-track span {
+  padding-right: 2rem;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.accordion-button::after {
+  filter: invert(1);
+  /* makes the arrow icon white */
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #121212;
+  color: #f3cc30;
+}
+
+/* form{
+  border: 1px solid #ffffff75;
+  padding: 10px;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+.review-form {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  background: linear-gradient(145deg, #1c1c1c, #2c2c2c);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px #131313, -10px -10px 20px #2f2f2f;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.review-form input[type="text"],
+.review-form select,
+.review-form input[type="file"] {
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: #1f1f1f;
+  color: white;
+  box-shadow: inset 4px 4px 8px #151515, inset -4px -4px 8px #292929;
+  transition: 0.3s ease;
+}
+
+.review-form input[type="text"]:focus,
+.review-form select:focus,
+.review-form input[type="file"]:focus {
+  outline: none;
+  box-shadow: inset 2px 2px 4px #111, inset -2px -2px 4px #333, 0 0 8px #ffc107;
+}
+
+.review-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: #ffc107;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 4px 4px 12px #111, -4px -4px 12px #333;
+}
+
+.review-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 6px 6px 15px #111, -6px -6px 15px #333;
+}
+
+.service-compare table {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.service-compare .table td,
+.service-compare .table th {
+  vertical-align: middle;
+  transition: background 0.3s ease;
+}
+
+.service-compare .table tbody tr:hover {
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+.rounded-table {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+@media (max-width: 576px) {
+  .service-compare h2 {
+    font-size: 1.5rem;
+  }
+
+  .service-compare .table th,
+  .service-compare .table td {
+    font-size: 0.85rem;
+    padding: 0.75rem 0.25rem;
+  }
+}
+
+.contact-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 18px rgba(255, 193, 7, 0.4);
+}
