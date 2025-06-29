@@ -1,71 +1,69 @@
 # 🌐 Roshan Tech Studio – Freelance Web Development Agency
 
-Welcome to the official repository of **Roshan Tech Studio**, a modern full-stack agency website offering personal and professional web development services — from student portfolios to business-grade websites.
+Welcome to the official repository of **Roshan Tech Studio**, a full-stack web development agency founded and managed by **Roshan Pakhre** — focused on delivering professional and affordable websites to students, startups, and small businesses.
 
 ---
 
 ## 🚀 Overview
 
-**Roshan Tech Studio** is a digital freelancing brand focused on helping:
-- 🎓 Students & Jobseekers showcase their portfolios
-- 🏪 Startups launch their online presence
-- 🚀 Growing businesses scale with professional websites
+Roshan Tech Studio helps individuals and businesses build a strong online presence through responsive, fast, and scalable websites.
 
-This website is built using **Next.js**, **Bootstrap**, and a powerful **Node.js + Express + MongoDB** backend.
+Built with a modern tech stack — **Next.js**, **Bootstrap**, and **Node.js/Express with MongoDB** — this platform showcases the services we offer and provides a seamless digital experience for clients.
+
+> 👨‍💻 *This project not only represents our services, but also demonstrates my capabilities in real-world client-facing product development.*
 
 ---
 
 ## 💡 Features
 
-- ⚡ Responsive and SEO-friendly UI
-- ⚙️ REST API with Express.js and MongoDB
-- 🧩 Scalable structure (frontend and backend separated)
-- 📊 Service comparison table
-- 🗃️ Admin dashboard (coming soon)
-- 🌐 Domain & hosting integration plans
-- ✉️ Contact & inquiry system
+- ⚡ Responsive, mobile-first UI using Bootstrap
+- 🌐 SEO-friendly meta structure and routing
+- 🔐 Scalable API architecture with Express.js & MongoDB
+- 📊 Service comparison & pricing table
+- ✉️ Contact form with email support
+- 🔧 Admin panel (WIP) for dynamic content updates
+- 🧠 Clean, maintainable code following best practices
 
 ---
 
-## 📁 Project Structure
+## 🧭 Project Structure
 
 roshan-tech-studio/
 ├── frontend/ # Next.js app (pages, components, styles)
-├── server/ # Express backend (API, DB models, routes)
-├── public/ # Public assets
+├── server/ # Express backend (routes, models, controllers)
+├── public/ # Assets (images, favicon, logos)
 ├── .env # Environment variables
-└── README.md
+└── README.md # Project documentation
 
 
 ---
 
 ## 📦 Tech Stack
 
-| Layer        | Technology                  |
-|--------------|------------------------------|
-| Frontend     | Next.js, React, Bootstrap    |
-| Backend      | Node.js, Express.js          |
-| Database     | MongoDB, Mongoose            |
-| Deployment   | Vercel (frontend), Render/Other (backend) |
-| Tools        | Git, GitHub, VS Code         |
+| Layer        | Technology                        |
+|--------------|------------------------------------|
+| Frontend     | Next.js, React, Bootstrap          |
+| Backend      | Node.js, Express.js                |
+| Database     | MongoDB, Mongoose                  |
+| Deployment   | Vercel (Frontend), Render (Backend)|
+| Tools        | Git, GitHub, VS Code, Figma        |
 
 ---
 
 ## 💼 Services Offered
 
-| Feature             | Portfolio (₹1000) | Simple (₹2999) | Business (₹5999) | Premium (₹9999)  |
-|---------------------|------------------|----------------|------------------|------------------|
-| Pages               | 1                | 3–5            | 5–7              | 10+              |
-| Hosting             | Netlify/Vercel   | Netlify        | Domain + Hosting | Domain + Hosting |
-| Maintenance         | ❌               | ❌             | Optional         | ₹500/visit       |
-| Best For            | Students/Jobseekers | Startups   | Small Businesses | Enterprises       |
+| Features             | Portfolio (₹1000)       | Simple (₹2999)         | Business (₹5999)        | Premium (₹9999)          |
+|----------------------|--------------------------|--------------------------|--------------------------|---------------------------|
+| Pages                | 1                        | 3–5                      | 5–7                      | 10+                        |
+| Hosting              | Netlify / Vercel         | Netlify                  | Domain + Hosting         | Domain + Hosting          |
+| Maintenance Support  | ❌                       | ❌                       | Optional                 | ₹500/visit                |
+| Best For             | 🎓 Students / Jobseekers | 🏪 Startups              | 🚀 Small Businesses       | 🏢 Enterprises             |
 
 ---
 
 ## 🔧 How to Run the Project
 
 ### 🔹 Frontend (Next.js)
-
 ```bash
 cd frontend
 npm install
@@ -78,16 +76,15 @@ npm run start
 
 
 🛣️ Roadmap
-✅ Service page with pricing table
+✅ Service section with pricing
+✅ Admin panel for backend control (in development)
+✅ Inquiry/contact form
+✅ CMS-ready structure for dynamic pages
+🔜 Authentication system for admin access
+🔜 Blog & testimonial system
 
-✅ Dynamic admin panel for content updates
+👨‍💼 About the Creator
+Hi, I'm Roshan Pakhre — a passionate full-stack developer building real-world solutions through clean design and solid backend structure. I created Roshan Tech Studio to support students and entrepreneurs in launching their digital presence without high agency costs.
 
-✅ Authentication (future)
-
-✅ Blog integration
-
-✅ Contact & feedback form
-
-🚧 Full CMS support (optional)
-
+🎯 I built this project as both a business tool and a demonstration of my frontend + backend skills
 
