@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Logo & Tagline */}
           <div className="col-md-4">
             <div className="mb-3">
-              <img src="/logo.png" alt="Logo" className="img-fluid" style={{ maxWidth: "150px" }} />
+              <img src="/logo.jpg" alt="Logo" className="img-fluid" style={{ maxWidth: "150px" }} />
             </div>
             <p className="small">Turning ideas into reality — one pixel at a time.</p>
           </div>
@@ -22,7 +22,7 @@ export default function Footer() {
             <ul className="list-unstyled">
               <li><Link href="/" className="text-white text-decoration-none d-block mb-1">🏠 Home</Link></li>
               <li><Link href="/about" className="text-white text-decoration-none d-block mb-1">👤 About</Link></li>
-              <li><Link href="/services" className="text-white text-decoration-none d-block mb-1">🛠 Services</Link></li>
+              <li><Link href="/service" className="text-white text-decoration-none d-block mb-1">🛠 Services</Link></li>
               <li><Link href="/contact" className="text-white text-decoration-none d-block">📞 Contact</Link></li>
             </ul>
           </div>

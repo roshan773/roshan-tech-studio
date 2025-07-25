@@ -69,7 +69,7 @@ export default function Home() {
               <Link href="/service" className='card text-decoration-none text-white'>
                 <div className='card'>
                   <img src="/PORTFOLIO Website.png" alt='Portfolio Website' className='img-fluid rounded' />
-                  <button className='btn btn-primary mt-2 fw-bold' style={{fontFamily: "Arial"}}>Portfolio Website</button>
+                  <button className='btn btn-primary mt-2 fw-bold' style={{ fontFamily: "Arial" }}>Portfolio Website</button>
                 </div>
               </Link>
             </div>
@@ -77,7 +77,7 @@ export default function Home() {
               <Link href="/service">
                 <div className='card'>
                   <img src="/Simple Website.png" alt='Simple Website' className='img-fluid rounded' />
-                  <button className='btn btn-primary mt-2 fw-bold' style={{fontFamily: "Arial"}}>Simple Website</button>
+                  <button className='btn btn-primary mt-2 fw-bold' style={{ fontFamily: "Arial" }}>Simple Website</button>
                 </div>
               </Link>
             </div>
@@ -85,7 +85,7 @@ export default function Home() {
               <Link href="/service">
                 <div className='card'>
                   <img src="/Business Website.png" alt='Business Website' className='img-fluid rounded' />
-                  <button className='btn btn-primary mt-2 fw-bold' style={{fontFamily: "Arial"}}>Business Website</button>
+                  <button className='btn btn-primary mt-2 fw-bold' style={{ fontFamily: "Arial" }}>Business Website</button>
                 </div>
               </Link>
             </div>
@@ -93,7 +93,7 @@ export default function Home() {
               <Link href="/service">
                 <div className='card'>
                   <img src="/Premium Website.png" alt='Business Website' className='img-fluid rounded' />
-                  <button className='btn btn-primary mt-2 fw-bold' style={{fontFamily: "Arial"}}>Premium Website</button>
+                  <button className='btn btn-primary mt-2 fw-bold' style={{ fontFamily: "Arial" }}>Premium Website</button>
                 </div>
               </Link>
             </div>
@@ -255,8 +255,8 @@ export default function Home() {
                   </div>
 
                   <div className="form-group">
-                    <label htmlFor="photo">Upload Photo</label>
-                    <input type="file" id="photo" />
+                    <label for="formFile" class="form-label">Default file input example</label>
+                    <input class="form-control" type="file" id="formFile" />
                   </div>
 
                   <button type="submit">Submit</button>

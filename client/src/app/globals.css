@@ -181,3 +181,97 @@ body {
   transform: translateY(-8px);
   box-shadow: 0 0 18px rgba(255, 193, 7, 0.4);
 }
+
+/* CSS */
+.login-button {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.login-button-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition:
+    transform 600ms cubic-bezier(.3, .7, .4, 1);
+}
+
+.login-button-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(to left,
+      hsl(64, 100%, 16%) 0%,
+      hsl(64, 100%, 32%) 8%,
+      hsl(64, 100%, 32%) 92%,
+      hsl(59, 100%, 16%) 100%);
+}
+
+.login-button-front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: rgb(0, 0, 0);
+  background: #f3cc2f;
+  will-change: transform;
+  transform: translateY(-4px);
+  transition:
+    transform 600ms cubic-bezier(.3, .7, .4, 1);
+}
+
+@media (min-width: 768px) {
+  .login-button-front {
+    font-size: 1.25rem;
+    padding: 12px 42px;
+  }
+}
+
+.login-button:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+
+.login-button:hover .login-button-front {
+  transform: translateY(-6px);
+  transition:
+    transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.login-button:active .login-button-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.login-button:hover .login-button-shadow {
+  transform: translateY(4px);
+  transition:
+    transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.login-button:active .login-button-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.login-button:focus:not(:focus-visible) {
+  outline: none;
+}
