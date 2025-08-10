@@ -42,7 +42,7 @@ const Page = () => {
                     </div>
 
                     {/* Submit Button */}
-                    <button className="login-button w-100" role="button"><span className="login-button-shadow"></span><span className="login-button-edge"></span><span className="login-button-front text fw-bold">LOGIN</span></button>
+                    <button type='submit' className="login-button w-100" role="button"><span className="login-button-shadow"></span><span className="login-button-edge"></span><span className="login-button-front text fw-bold">REGISTER</span></button>
                 </form>
             </div>
         </div>

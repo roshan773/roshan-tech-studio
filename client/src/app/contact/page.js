@@ -3,6 +3,7 @@ import React from 'react';
 import { FiPhone } from 'react-icons/fi';
 import { MdEmail } from 'react-icons/md';
 import { FaGlobe, FaMapMarkerAlt } from 'react-icons/fa';
+import Link from 'next/link';
 
 const page = () => {
   return (
@@ -21,7 +22,7 @@ const page = () => {
               <div className="contact-card p-4 rounded bg-dark text-white h-100 shadow-sm">
                 <FiPhone size={40} className="mb-3 text-warning" />
                 <h5 className="mb-2">Call Us</h5>
-                <p className="mb-0">+91 12345 67890</p>
+                <p className="mb-0">+91 9974832889</p>
               </div>
             </div>
 
@@ -29,7 +30,7 @@ const page = () => {
               <div className="contact-card p-4 rounded bg-dark text-white h-100 shadow-sm">
                 <MdEmail size={40} className="mb-3 text-warning" />
                 <h5 className="mb-2">Email Us</h5>
-                <p className="mb-0">hello@roshantech.com</p>
+                <p className="mb-0">pakhreroshan@gmail.com</p>
               </div>
             </div>
 
@@ -45,7 +46,7 @@ const page = () => {
               <div className="contact-card p-4 rounded bg-dark text-white h-100 shadow-sm">
                 <FaMapMarkerAlt size={40} className="mb-3 text-warning" />
                 <h5 className="mb-2">Location</h5>
-                <p className="mb-0">Pune, Maharashtra</p>
+                <p className="mb-0">Surat, Gujarat</p>
               </div>
             </div>
 
@@ -101,7 +102,7 @@ const page = () => {
                     ></textarea>
                   </div>
 
-                  <button type="submit" className="btn btn-warning">Submit Order</button>
+                  <button className="login-button" role="button"><span className="login-button-shadow"></span><span className="login-button-edge"></span><span className="login-button-front text fw-bold"><Link href="/contact" className="text-black text-decoration-none">ORDER NOW</Link></span></button>
                 </form>
 
               </div>

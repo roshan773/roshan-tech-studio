@@ -100,17 +100,30 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="cta-section my-1" style={{ backgroundImage: "url('/CTA-banner.png')", height: "auto", backgroundSize: "cover", backgroundPosition: "center" }}>
-          <div className="container-fluid w-100 h-auto text-center">
-            <div className="display-1" style={{ fontSize: "10vw" }}>DON'T HAVE A WEBSITE</div>
-            <div className="display-6">
-              <a href="#" className="btn2 text-decoration-none text-white" style={{ fontSize: "3vw" }}>Order Now</a>
-            </div>
-            <div className="w-100 d-flex justify-content-center align-items-center">
-              <img src="https://cdn3d.iconscout.com/3d/premium/thumb/man-stand-folding-hand-3d-illustration-download-in-png-blend-fbx-gltf-file-formats--boy-stands-person-hands-character-casual-outfits-half-body-pack-people-illustrations-5600563.png" className='img-fluid' />
+        <div
+          className="cta-section py-5"
+          style={{
+            backgroundImage: "url('/CTA-banner.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <div className="Container text-center text-white">
+            <h1 className="display-1 fw-bold" style={{ fontSize: "8vw" }}>
+              DON'T HAVE A WEBSITE?
+            </h1>
+            <button className="login-button" role="button"><span className="login-button-shadow"></span><span className="login-button-edge"></span><span className="login-button-front text fw-bold"><Link href="/contact" className="text-black text-decoration-none">ORDER NOW</Link></span></button>
+            <div className="d-flex justify-content-center">
+              <img
+                src="https://cdn3d.iconscout.com/3d/premium/thumb/man-stand-folding-hand-3d-illustration-download-in-png-blend-fbx-gltf-file-formats--boy-stands-person-hands-character-casual-outfits-half-body-pack-people-illustrations-5600563.png"
+                className="img-fluid"
+                alt="3D Man Illustration"
+              />
             </div>
           </div>
         </div>
+
 
         {/* FAQ */}
         <div className="container my-5" id="faq" style={{ fontFamily: "Arial" }}>
@@ -255,8 +268,8 @@ export default function Home() {
                   </div>
 
                   <div className="form-group">
-                    <label for="formFile" class="form-label">Default file input example</label>
-                    <input class="form-control" type="file" id="formFile" />
+                    <label htmlFor="formFile" className="form-label">Default file input example</label>
+                    <input className="form-control" type="file" id="formFile" />
                   </div>
 
                   <button type="submit">Submit</button>
