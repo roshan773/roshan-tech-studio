@@ -65,7 +65,7 @@ roshan-tech-studio/
 
 ## 🚦 Getting Started
 
-### 1️⃣ Run Frontend (Next.js)
+### 1️⃣ Run Frontend (Next.js) abd backend (Express.js)
 ```bash
 cd frontend
 npm install
