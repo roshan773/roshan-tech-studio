@@ -1,23 +1,22 @@
 const express = require("express")
-const connectToDb = require("./utils/DB")
-const userRouter = require("./router/user.routes")
+const connecttoDb = require("./utils/db")
 require("dotenv").config()
-
 const app = express()
-
-app.use("/api/user/", userRouter)
-
+const PORT = process.env.PORT || 3000
 
 
 
 
 
 
-app.listen(process.env.PORT, async() => {
+
+
+
+app.listen(PORT, () => {
     try {
-        await console.log("Server is Running")
-        await connectToDb()
+        console.log("Server is running")
+        connecttoDb()
     } catch (error) {
-        
+        console.log("Internal server Error")
     }
 })
