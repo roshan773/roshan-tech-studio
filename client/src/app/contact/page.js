@@ -61,7 +61,7 @@ const page = () => {
               </div>
               <div className="col-12 col-sm-12 col-md-12 col-lg-6">
                 <div className="display-3">
-                  Quick Feedback
+                  Start Your Order
                 </div>
                 <form className="order-form mt-3">
 
